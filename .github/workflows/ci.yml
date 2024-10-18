@@ -17,6 +17,8 @@ jobs:
       run: npm install
     - name: Run ESLint
       run: npm run lint
+
+  #test 1 
   cypress-tests-desktop:
     needs: eslint
     runs-on: ubuntu-22.04
@@ -32,6 +34,8 @@ jobs:
           CYPRESS_MAILOSAUR_API_KEY: ${{ secrets.CYPRESS_MAILOSAUR_API_KEY }}
         with:
           command: npm test
+          
+  #test 2
   cypress-tests-tablet:
     needs: eslint
     runs-on: ubuntu-22.04
