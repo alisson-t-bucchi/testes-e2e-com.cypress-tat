@@ -8,8 +8,6 @@ module.exports = defineConfig({
       viewportWidthBreakpoint: 768,
     },
     video: true,
-    setupNodeEvents() {
-      // implement node event listeners here
-    },
   },
+  projectId: 'gnyxew'
 })
