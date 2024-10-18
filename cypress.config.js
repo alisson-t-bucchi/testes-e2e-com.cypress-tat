@@ -8,7 +8,7 @@ module.exports = defineConfig({
       viewportWidthBreakpoint: 768,
     },
     video: true,
-    setupNodeEvents(on, config) {
+    setupNodeEvents() {
       // implement node event listeners here
     },
   },
