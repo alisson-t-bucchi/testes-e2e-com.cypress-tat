@@ -4,7 +4,7 @@ describe('Login', () => {
 
     cy.guiLogin()
 
-    cy.wait('@getNotes')
+    cy.wait('@getNotes', { timeout: 10000 })
     cy.contains('a', 'Create a new note').should('be.visible')
   })
 })

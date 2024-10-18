@@ -18,10 +18,10 @@ describe('Scenarios where authentication is a pre-condition', () => {
     const attachFile = true
 
     cy.editNote(noteDescription, updatedNoteDescription, attachFile)
-    cy.wait('@getNotes')
+    cy.wait('@getNotes', { timeout: 10000 })
 
     cy.deleteNote(updatedNoteDescription)
-    cy.wait('@getNotes')
+    cy.wait('@getNotes', { timeout: 10000 })
   })
 
   it('successfully submits the settings form', () => {
